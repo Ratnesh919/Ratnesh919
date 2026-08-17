@@ -1,8 +1,8 @@
 <div align="center">
 
-  <!-- 🌌 SYNTHWAVE / CYBERPUNK ANIMATED HEADER BANNER 🌌 -->
+  <!-- 🌌 FROSTED GLASSMORPHISM ANIMATED HEADER BANNER 🌌 -->
   <a href="https://github.com/Ratnesh919">
-    <img src="./header-card.svg" width="100%" alt="Ratnesh Kumar Singh Header"/>
+    <img src="./header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Glassmorphic Header Card"/>
   </a>
 
   <br/><br/>
@@ -14,9 +14,9 @@
 
   <br/><br/>
 
-  <!-- 🌐 CONNECT WITH ME BUTTONS 🌐 -->
+  <!-- 🌐 FROSTED GLASS SOCIAL CONNECT BADGES 🌐 -->
   <a href="https://my-portfolio-omega-liart-40.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00f2fe" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/🌐_Portfolio-0C101B?style=for-the-badge&logo=vercel&logoColor=00f2fe" alt="Portfolio"/>
   </a>
   <a href="https://tinyurl.com/2st86aht" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -33,7 +33,7 @@
 
   <br/><br/>
 
-  <!-- 📊 LIVE VISITOR COUNTER & STATUS 📊 -->
+  <!-- 📊 PROFILE VIEWS & STATUS 📊 -->
   <img src="https://komarev.com/ghpvc/?username=Ratnesh919&label=Profile%20Views&color=00d2ff&style=flat-square" alt="Profile Views" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/github/followers/Ratnesh919?label=Followers&style=flat-square&color=22c55e" alt="Followers" />
@@ -48,25 +48,26 @@
 
 <table>
   <tr>
-    <td width="65%" valign="top">
+    <td width="60%" valign="top">
       <p>
-        🎓 <strong>Final-Year ECE Undergrad (2022–2026)</strong> at <em>Swami Vivekananda Institute of Science &amp; Technology (MAKAUT)</em>.
+        🎓 <strong>B.Tech in Electronics &amp; Communication Engineering (2022–2026)</strong><br/>
+        <em>Swami Vivekananda Institute of Science &amp; Technology (MAKAUT University)</em>
       </p>
       <p>
         💡 <code>Code 💻 ➔ Automate 🤖 ➔ Test ⚡ ➔ Deploy 🚀</code>
       </p>
       <ul>
-        <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms for wireless vehicular communication.</li>
-        <li>🤖 <strong>AI Automation Specialist</strong>: Architecting autonomous workflows, conversational assistants, and prompt pipelines using <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
-        <li>⚡ <strong>Embedded Hardware &amp; IoT</strong>: Building sensor telemetry prototypes with <strong>Arduino</strong> microcontrollers, RF shields, and EV diagnostics.</li>
-        <li>🎨 <strong>UI/UX &amp; Web Developer</strong>: Crafting accessible interfaces (WCAG compliant) in <strong>Figma</strong> and deploying responsive web apps on <strong>Vercel</strong>.</li>
-        <li>🎮 <strong>Passions &amp; Interests</strong>: Video game mechanics analysis, tech photography, sketching, and following hardware breakthroughs.</li>
-        <li>📫 <strong>Get in Touch</strong>: <a href="mailto:kumarsinghratnesh3@gmail.com"><code>kumarsinghratnesh3@gmail.com</code></a></li>
+        <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms to dynamically direct signals toward high-speed moving vehicles.</li>
+        <li>🤖 <strong>AI Automation Specialist</strong>: Architecting modular AI assistants, multi-agent workflows, and webhook integrations with <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
+        <li>⚡ <strong>Embedded Hardware &amp; IoT</strong>: Building sensor telemetry prototypes with <strong>Arduino</strong> microcontrollers, ultrasonic matrices, and wireless RF shields.</li>
+        <li>🎨 <strong>UI/UX &amp; Web Developer</strong>: Designing WCAG-accessible digital interfaces in <strong>Figma</strong> and deploying lightning-fast responsive web apps on <strong>Vercel</strong>.</li>
+        <li>🎮 <strong>Passions</strong>: Video game mechanics analysis, tech photography, sketching, and following hardware breakthroughs.</li>
+        <li>📫 <strong>Direct Inquiries</strong>: <a href="mailto:kumarsinghratnesh3@gmail.com"><code>kumarsinghratnesh3@gmail.com</code></a></li>
       </ul>
     </td>
-    <td width="35%" align="center" valign="middle">
-      <!-- Animated Developer GIF from Cool-GIFs -->
-      <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100%" alt="Coding Animation"/>
+    <td width="40%" align="center" valign="middle">
+      <!-- 🎮 RETRO PIXEL CYBER WORKSTATION ANIMATED GIF 🎮 -->
+      <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100%" alt="Developer Pixel Workstation Animation"/>
     </td>
   </tr>
 </table>
@@ -77,7 +78,7 @@
 
 <div align="center">
 
-  <!-- Interactive Skill Icons Grid -->
+  <!-- Interactive Skill Icons Grid (skillicons.dev) -->
   <p>
     <a href="https://skillicons.dev">
       <img src="https://skillicons.dev/icons?i=python,c,cpp,matlab,arduino,html,css,figma,vscode,git,github,vercel,linux,postman" alt="Skill Icons" />
@@ -86,7 +87,7 @@
 
   <br/>
 
-  <!-- Categorized Badge Rows -->
+  <!-- Categorized Glass Badge Badges -->
   <div>
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
     <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
@@ -167,20 +168,20 @@
 
 <div align="center">
 
-  <!-- ⚡ CUSTOM ELECTRIC NEON OUTLINE STATS CARD ⚡ -->
+  <!-- ⚡ CUSTOM FROSTED GLASS STATS CARD ⚡ -->
   <a href="https://github.com/Ratnesh919">
     <img src="./stats-card.svg" width="100%" alt="Ratnesh Engineering Stats Card"/>
   </a>
 
   <br/><br/>
 
-  <!-- Dynamic GitHub Streak Stats -->
-  <img src="https://streak-stats.demolab.com/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0D1117&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE" height="175" alt="GitHub Streak" />
+  <!-- Dynamic GitHub Streak Stats with Cyan Neon Flame -->
+  <img src="https://streak-stats.demolab.com/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0C101B&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE" height="175" alt="GitHub Streak" />
 
   <br/><br/>
 
-  <!-- Dynamic Activity Wave Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ratnesh919&theme=tokyo-night&hide_border=true&bg_color=0D1117" width="100%" alt="GitHub Activity Graph" />
+  <!-- Dynamic Tokyo-Night Activity Wave Graph -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ratnesh919&theme=tokyo-night&hide_border=true&bg_color=0C101B" width="100%" alt="GitHub Activity Graph" />
 
 </div>
 
