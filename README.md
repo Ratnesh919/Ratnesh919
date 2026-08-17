@@ -5,9 +5,9 @@
 
   <br/><br/>
 
-  <!-- 🪟 FROSTED GLASS IDENTITY CARD 🪟 -->
+  <!-- 🪟 FROSTED GLASS IDENTITY CARD WITH REALISTIC SPECULAR BORDER 🪟 -->
   <a href="https://github.com/Ratnesh919">
-    <img src="./header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Frosted Glass Card"/>
+    <img src="./header-card.svg?v=2" width="100%" alt="Ratnesh Kumar Singh - Realistic Glassmorphic Header Card"/>
   </a>
 
   <br/><br/>
@@ -181,18 +181,23 @@
 
 ---
 
-<!-- 🐱 CUTE PIXEL MASCOT PEEKING OVER TOP-RIGHT CORNER OF STATS CARD 🐱 -->
-<div align="right" style="margin-bottom: -22px; padding-right: 18px;">
-  <img src="./above-cards-2.gif" width="75" alt="Corner Mascot Pet" style="margin-bottom: -15px; position: relative; z-index: 10;"/>
-</div>
-
-### 📊 GitHub Activity & Dynamic Statistics
+<!-- 🐱 SECTION HEADER WITH CORNER PET DIRECTLY ABOVE CARD RIM 🐱 -->
+<table>
+  <tr>
+    <td align="left" valign="bottom">
+      <h3>📊 GitHub Activity &amp; Dynamic Statistics</h3>
+    </td>
+    <td align="right" valign="bottom">
+      <img src="./above-cards-2.gif" width="70" alt="Corner Mascot" style="vertical-align: bottom; margin-bottom: 0;"/>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
 
-  <!-- 🪟 FROSTED GLASS STATS DASHBOARD CARD 🪟 -->
+  <!-- 🪟 FROSTED GLASS STATS DASHBOARD CARD WITH REALISTIC SPECULAR BORDER 🪟 -->
   <a href="https://github.com/Ratnesh919">
-    <img src="./stats-card.svg" width="100%" alt="Ratnesh Engineering Stats Card"/>
+    <img src="./stats-card.svg?v=2" width="100%" alt="Ratnesh Engineering Stats Card"/>
   </a>
 
   <br/><br/>
