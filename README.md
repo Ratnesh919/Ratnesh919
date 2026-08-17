@@ -1,11 +1,15 @@
 <div align="center">
 
-  <!-- Animated Header Wave Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=220&section=header&text=Ratnesh%20Kumar%20Singh&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Electronics%20%26%20Communication%20Engineer%20%7C%20AI%20Automation%20%7C%20Networking&descAlignY=62&descAlign=50" width="100%" alt="Ratnesh Kumar Singh Header"/>
+  <!-- Custom Animated Header Card -->
+  <a href="https://github.com/Ratnesh919">
+    <img src="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/main/assets/header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Header Card"/>
+  </a>
 
-  <!-- Animated Typing Tagline -->
+  <br/><br/>
+
+  <!-- Animated Live Typing Tagline -->
   <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=22D3EE&center=true&vCenter=true&width=620&lines=Electronics+%26+Communication+Engineer+(2022-2026);AI+Automation+%26+LLM+Agent+Architect;IoT+%26+Embedded+Hardware+Developer;Networking%2C+TCP%2FIP+%26+V2X+Researcher;Figma+UI%2FUX+%26+Modern+Web+Designer" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=22D3EE&center=true&vCenter=true&width=620&lines=Electronics+and+Communication+Engineer+(2022-2026);AI+Automation+and+LLM+Agent+Architect;IoT+and+Embedded+Hardware+Developer;Networking%2C+TCP%2FIP+and+V2X+Researcher;Figma+UI%2FUX+and+Modern+Web+Designer" alt="Typing SVG" />
   </a>
 
   <br/><br/>
@@ -56,6 +60,35 @@ Hobbies: [Gaming Mechanics, Tech Photography, Sketching & Creative Editing]
 - 🤖 **AI Automation Specialist**: Crafting intelligent automation pipelines, autonomous agents, and modular chatbots with **OpenAI API**, **Google AI Studio**, and **n8n**.
 - ⚡ **Embedded & IoT Builder**: Experienced in microcontroller programming (**Arduino**, sensors, telemetry shields) and EV electronics testing.
 - 🎨 **UI/UX & Web Developer**: Designing responsive digital interfaces with **Figma** (WCAG compliant) and modern web stacks.
+
+---
+
+### 📊 Engineering Dashboard & Telemetry
+
+<div align="center">
+  <!-- Custom Self-Hosted Animated Live Stats Card -->
+  <a href="https://github.com/Ratnesh919">
+    <img src="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/main/assets/stats-card.svg" width="100%" alt="Ratnesh Engineering Stats Card"/>
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <!-- Dynamic GitHub Streak Badge -->
+  <img src="https://streak-stats.demolab.com/?user=Ratnesh919&theme=tokyonight&hide_border=true" alt="Ratnesh's GitHub Streak" />
+</div>
+
+<br/>
+
+<!-- Animated Contribution Snake Game -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/output/github-contribution-grid-snake-dark.svg">
+  </picture>
+</div>
 
 ---
 
@@ -161,35 +194,6 @@ Hobbies: [Gaming Mechanics, Tech Photography, Sketching & Creative Editing]
 
 ---
 
-### 📊 GitHub Activity & Dynamic Statistics
-
-<div align="center">
-
-  <!-- GitHub Stats & Streak Stats in Dark Theme -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Ratnesh919&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00f2fe&icon_color=4facfe&text_color=c9d1d9" height="175" alt="Ratnesh's GitHub Stats" />
-  &nbsp;
-  <img src="https://streak-stats.demolab.com/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0D1117&ring=00f2fe&fire=4facfe&currStreakLabel=00f2fe" height="175" alt="Ratnesh's GitHub Streak" />
-
-  <br/><br/>
-
-  <!-- Top Languages Card -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ratnesh919&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00f2fe&text_color=c9d1d9" height="155" alt="Top Languages" />
-
-</div>
-
-<br/>
-
-<!-- Animated Contribution Snake Game -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/output/github-contribution-grid-snake-dark.svg">
-  </picture>
-</div>
-
----
-
 ### 📜 Certifications & Achievements
 
 - 🗺️ **GIS (Geographic Information Systems)**: 2-week intensive training on geospatial mapping, spatial data annotation, and data tagging.
@@ -232,7 +236,7 @@ Hobbies: [Gaming Mechanics, Tech Photography, Sketching & Creative Editing]
 
   <br/><br/>
 
-  <!-- Animated Footer Wave Banner -->
+  <!-- Bottom Wave Divider -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=100&section=footer" width="100%" alt="Footer Wave"/>
 
 </div>
