@@ -1,267 +1,200 @@
-<svg fill="none" viewBox="0 0 850 320" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="320">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="statsBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#070a10" />
+    </linearGradient>
 
-        .dashboard-container {
-          width: 850px;
-          height: 320px;
-          background: #0d1117;
-          border-radius: 16px;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          position: relative;
-          overflow: hidden;
-          padding: 24px;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 20px;
-          box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-        }
+    <!-- Moving Laser Border Gradients -->
+    <linearGradient id="neonLaserCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
 
-        /* Ambient subtle light */
-        .ambient-glow {
-          position: absolute;
-          width: 250px;
-          height: 250px;
-          background: radial-gradient(circle, rgba(0, 242, 254, 0.08) 0%, rgba(0,0,0,0) 70%);
-          top: -50px;
-          left: 50%;
-          transform: translateX(-50%);
-          pointer-events: none;
-        }
+    <linearGradient id="neonLaserPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
 
-        .card-panel {
-          background: rgba(22, 27, 34, 0.7);
-          border: 1px solid rgba(48, 54, 61, 0.8);
-          border-radius: 12px;
-          padding: 18px 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          position: relative;
-          z-index: 2;
-        }
+    <!-- Progress Bar Gradients -->
+    <linearGradient id="progCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
 
-        .panel-header {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          border-bottom: 1px solid rgba(48, 54, 61, 0.6);
-          padding-bottom: 10px;
-          margin-bottom: 12px;
-        }
+    <linearGradient id="progPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
 
-        .panel-title {
-          font-size: 14px;
-          font-weight: 700;
-          color: #58a6ff;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          letter-spacing: 0.3px;
-        }
+    <linearGradient id="progGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
 
-        .panel-tag {
-          font-size: 11px;
-          font-weight: 600;
-          color: #3fb950;
-          background: rgba(63, 185, 80, 0.15);
-          padding: 2px 8px;
-          border-radius: 10px;
-        }
+    <linearGradient id="progAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
 
-        /* Metric Grid */
-        .metrics-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 12px;
-        }
+    <!-- Glow Filter -->
+    <filter id="neonGlowStats" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur1" />
+      <feGaussianBlur stdDeviation="8" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
 
-        .metric-box {
-          background: rgba(13, 17, 23, 0.8);
-          border: 1px solid rgba(48, 54, 61, 0.5);
-          border-radius: 8px;
-          padding: 10px 12px;
-        }
+    <style>
+      @keyframes borderChaseStats {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 2340; }
+      }
+      @keyframes borderChaseStatsRev {
+        0% { stroke-dashoffset: 2340; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes barGrow {
+        0% { transform: scaleX(0); }
+        100% { transform: scaleX(1); }
+      }
+      .anim-stats-border-cyan {
+        stroke-dasharray: 160 425;
+        animation: borderChaseStats 7s linear infinite;
+      }
+      .anim-stats-border-purple {
+        stroke-dasharray: 120 465;
+        animation: borderChaseStatsRev 9s linear infinite;
+      }
+      .bar-anim {
+        transform-origin: left;
+        animation: barGrow 1.5s ease-out forwards;
+      }
+    </style>
+  </defs>
 
-        .metric-label {
-          font-size: 11px;
-          color: #8b949e;
-          font-weight: 500;
-          margin-bottom: 4px;
-        }
+  <!-- 1. Background -->
+  <rect x="4" y="4" width="842" height="312" rx="16" fill="url(#statsBgGrad)" />
 
-        .metric-value {
-          font-size: 20px;
-          font-weight: 800;
-          color: #f0f6fc;
-          display: flex;
-          align-items: baseline;
-          gap: 4px;
-        }
+  <!-- 2. Static border base -->
+  <rect x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
 
-        .metric-sub {
-          font-size: 11px;
-          color: #58a6ff;
-          font-weight: 600;
-        }
+  <!-- 3. ⚡ ANIMATED ELECTRIC OUTLINE BORDER ⚡ -->
+  <rect class="anim-stats-border-cyan" x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="url(#neonLaserCyan)" stroke-width="3" filter="url(#neonGlowStats)" />
+  <rect class="anim-stats-border-purple" x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="url(#neonLaserPurple)" stroke-width="2.5" filter="url(#neonGlowStats)" />
 
-        /* Skill bars */
-        .skill-item {
-          margin-bottom: 10px;
-        }
+  <!-- LEFT PANEL (Overview) -->
+  <g transform="translate(24, 24)">
+    <rect width="386" height="272" rx="12" fill="rgba(22, 27, 34, 0.75)" stroke="rgba(48, 54, 61, 0.8)" stroke-width="1" />
+    
+    <!-- Header -->
+    <text x="18" y="32" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
+      ⚡ Engineering Overview
+    </text>
+    <rect x="290" y="16" width="78" height="22" rx="11" fill="rgba(63, 185, 80, 0.15)" stroke="rgba(63, 185, 80, 0.3)" stroke-width="1" />
+    <text x="329" y="31" text-anchor="middle" fill="#3fb950" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">
+      ECE • 2026
+    </text>
+    <line x1="18" y1="46" x2="368" y2="46" stroke="rgba(48, 54, 61, 0.6)" stroke-width="1" />
 
-        .skill-info {
-          display: flex;
-          justify-content: space-between;
-          font-size: 12px;
-          color: #c9d1d9;
-          font-weight: 600;
-          margin-bottom: 4px;
-        }
+    <!-- 4 Metric Boxes -->
+    <!-- Box 1 -->
+    <g transform="translate(18, 58)">
+      <rect width="168" height="74" rx="8" fill="rgba(13, 17, 23, 0.85)" stroke="rgba(48, 54, 61, 0.6)" stroke-width="1" />
+      <text x="12" y="24" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Total Contributions</text>
+      <text x="12" y="54" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">
+        260+ <tspan fill="#58a6ff" font-size="11" font-weight="600">Commits</tspan>
+      </text>
+    </g>
 
-        .progress-bar-bg {
-          height: 6px;
-          width: 100%;
-          background: #21262d;
-          border-radius: 4px;
-          overflow: hidden;
-        }
+    <!-- Box 2 -->
+    <g transform="translate(200, 58)">
+      <rect width="168" height="74" rx="8" fill="rgba(13, 17, 23, 0.85)" stroke="rgba(48, 54, 61, 0.6)" stroke-width="1" />
+      <text x="12" y="24" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Research Focus</text>
+      <text x="12" y="54" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">
+        V2X <tspan fill="#38bdf8" font-size="11" font-weight="600">Beamforming</tspan>
+      </text>
+    </g>
 
-        .progress-bar-fill {
-          height: 100%;
-          border-radius: 4px;
-          animation: fillUp 1.8s ease-out forwards;
-        }
+    <!-- Box 3 -->
+    <g transform="translate(18, 144)">
+      <rect width="168" height="74" rx="8" fill="rgba(13, 17, 23, 0.85)" stroke="rgba(48, 54, 61, 0.6)" stroke-width="1" />
+      <text x="12" y="24" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Hardware &amp; IoT</text>
+      <text x="12" y="54" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">
+        Arduino <tspan fill="#34d399" font-size="11" font-weight="600">&amp; Telemetry</tspan>
+      </text>
+    </g>
 
-        @keyframes fillUp {
-          from { width: 0%; }
-        }
+    <!-- Box 4 -->
+    <g transform="translate(200, 144)">
+      <rect width="168" height="74" rx="8" fill="rgba(13, 17, 23, 0.85)" stroke="rgba(48, 54, 61, 0.6)" stroke-width="1" />
+      <text x="12" y="24" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">AI Automation</text>
+      <text x="12" y="54" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">
+        LLMs <tspan fill="#c084fc" font-size="11" font-weight="600">&amp; n8n</tspan>
+      </text>
+    </g>
 
-        .fill-cyan { background: linear-gradient(90deg, #00f2fe, #4facfe); }
-        .fill-purple { background: linear-gradient(90deg, #8a2be2, #c084fc); }
-        .fill-green { background: linear-gradient(90deg, #10b981, #34d399); }
-        .fill-amber { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+    <!-- Left Footer -->
+    <circle cx="26" cy="245" r="3.5" fill="#3fb950" />
+    <text x="36" y="249" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Active Research &amp; Building</text>
+    <text x="368" y="249" text-anchor="end" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">MAKAUT University</text>
+  </g>
 
-        .footer-note {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 11px;
-          color: #8b949e;
-          padding-top: 8px;
-        }
+  <!-- RIGHT PANEL (Technical Competency) -->
+  <g transform="translate(440, 24)">
+    <rect width="386" height="272" rx="12" fill="rgba(22, 27, 34, 0.75)" stroke="rgba(48, 54, 61, 0.8)" stroke-width="1" />
+    
+    <!-- Header -->
+    <text x="18" y="32" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
+      🛠️ Technical Competency
+    </text>
+    <rect x="300" y="16" width="68" height="22" rx="11" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+    <text x="334" y="31" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">
+      Verified
+    </text>
+    <line x1="18" y1="46" x2="368" y2="46" stroke="rgba(48, 54, 61, 0.6)" stroke-width="1" />
 
-        .live-dot {
-          display: inline-block;
-          width: 6px;
-          height: 6px;
-          background: #3fb950;
-          border-radius: 50%;
-          box-shadow: 0 0 8px #3fb950;
-          margin-right: 4px;
-        }
-      </style>
+    <!-- Skill 1 -->
+    <g transform="translate(18, 62)">
+      <text x="0" y="0" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Python, C, C++ &amp; Scripting</text>
+      <text x="350" y="0" text-anchor="end" fill="#4facfe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">92%</text>
+      <rect y="8" width="350" height="6" rx="3" fill="#21262d" />
+      <rect class="bar-anim" y="8" width="322" height="6" rx="3" fill="url(#progCyan)" />
+    </g>
 
-      <div class="dashboard-container">
-        <div class="ambient-glow"></div>
+    <!-- Skill 2 -->
+    <g transform="translate(18, 108)">
+      <text x="0" y="0" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">AI Automation, APIs &amp; n8n</text>
+      <text x="350" y="0" text-anchor="end" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">88%</text>
+      <rect y="8" width="350" height="6" rx="3" fill="#21262d" />
+      <rect class="bar-anim" y="8" width="308" height="6" rx="3" fill="url(#progPurple)" />
+    </g>
 
-        <!-- Left Panel: Engineering Core Stats -->
-        <div class="card-panel">
-          <div>
-            <div class="panel-header">
-              <span class="panel-title">⚡ Engineering Overview</span>
-              <span class="panel-tag">ECE • 2026</span>
-            </div>
+    <!-- Skill 3 -->
+    <g transform="translate(18, 154)">
+      <text x="0" y="0" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Networking, TCP/IP &amp; Protocols</text>
+      <text x="350" y="0" text-anchor="end" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">85%</text>
+      <rect y="8" width="350" height="6" rx="3" fill="#21262d" />
+      <rect class="bar-anim" y="8" width="297" height="6" rx="3" fill="url(#progGreen)" />
+    </g>
 
-            <div class="metrics-grid">
-              <div class="metric-box">
-                <div class="metric-label">Total Contributions</div>
-                <div class="metric-value">260+ <span class="metric-sub">Commits</span></div>
-              </div>
-              <div class="metric-box">
-                <div class="metric-label">Research Focus</div>
-                <div class="metric-value">V2X <span class="metric-sub">Beamforming</span></div>
-              </div>
-              <div class="metric-box">
-                <div class="metric-label">Hardware &amp; IoT</div>
-                <div class="metric-value">Arduino <span class="metric-sub">&amp; Telemetry</span></div>
-              </div>
-              <div class="metric-box">
-                <div class="metric-label">AI Automation</div>
-                <div class="metric-value">LLMs <span class="metric-sub">&amp; n8n</span></div>
-              </div>
-            </div>
-          </div>
+    <!-- Skill 4 -->
+    <g transform="translate(18, 200)">
+      <text x="0" y="0" fill="#c9d1d9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Figma UI/UX &amp; Web Development</text>
+      <text x="350" y="0" text-anchor="end" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">82%</text>
+      <rect y="8" width="350" height="6" rx="3" fill="#21262d" />
+      <rect class="bar-anim" y="8" width="287" height="6" rx="3" fill="url(#progAmber)" />
+    </g>
 
-          <div class="footer-note">
-            <span><span class="live-dot"></span>Active Research &amp; Building</span>
-            <span>MAKAUT University</span>
-          </div>
-        </div>
-
-        <!-- Right Panel: Core Competencies -->
-        <div class="card-panel">
-          <div>
-            <div class="panel-header">
-              <span class="panel-title">🛠️ Technical Competency</span>
-              <span class="panel-tag">Verified</span>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Python, C, C++ &amp; Scripting</span>
-                <span style="color: #4facfe;">90%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill fill-cyan" style="width: 90%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>AI Automation, APIs &amp; n8n</span>
-                <span style="color: #c084fc;">88%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill fill-purple" style="width: 88%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Networking, TCP/IP &amp; Protocols</span>
-                <span style="color: #34d399;">85%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill fill-green" style="width: 85%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Figma UI/UX &amp; Web Development</span>
-                <span style="color: #fbbf24;">82%</span>
-              </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill fill-amber" style="width: 82%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-note">
-            <span>Systems Integration</span>
-            <span>Open for Relocation</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </foreignObject>
+    <!-- Right Footer -->
+    <text x="18" y="249" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Systems Integration</text>
+    <text x="368" y="249" text-anchor="end" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Open for Relocation</text>
+  </g>
 </svg>
