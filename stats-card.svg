@@ -2,33 +2,33 @@
   <defs>
     <!-- Deep Glass Background Gradient -->
     <linearGradient id="glassBgStats" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0e1424" stop-opacity="0.96" />
-      <stop offset="50%" stop-color="#12182c" stop-opacity="0.92" />
-      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0.97" />
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.98" />
+      <stop offset="50%" stop-color="#141e33" stop-opacity="0.94" />
+      <stop offset="100%" stop-color="#0b101e" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Glare Sheen -->
     <linearGradient id="glassGlareStats" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14" />
-      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.05" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.00" />
     </linearGradient>
 
-    <!-- Realistic Specular Glass Border -->
+    <!-- Prominent High-Contrast Specular Glass Border -->
     <linearGradient id="realisticBorderStats" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55" />
-      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.45" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12" />
-      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.35" />
-      <stop offset="90%" stop-color="#ffffff" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="25%" stop-color="#00f2fe" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.30" />
+      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.70" />
+      <stop offset="90%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.60" />
     </linearGradient>
 
     <!-- Inner Bevel Inset Rim -->
     <linearGradient id="innerBevelStats" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.02" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.40" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.60" />
     </linearGradient>
 
     <!-- Progress Bars -->
@@ -49,18 +49,22 @@
       <stop offset="100%" stop-color="#fbbf24" />
     </linearGradient>
 
-    <!-- Realistic Depth & Shadow Filter -->
-    <filter id="realisticDepthStats" x="-15%" y="-15%" width="130%" height="135%">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.75" />
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+    <!-- 100% Standard SVG 1.1 Shadow Filter -->
+    <filter id="cardShadowStats" x="-10%" y="-10%" width="125%" height="135%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur" />
+      <feOffset in="blur" dx="0" dy="8" result="offsetBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.8" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="dropShadow" />
+      <feMerge>
+        <feMergeNode in="dropShadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
 
-    <filter id="glassGlowStats" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="b1" />
-      <feGaussianBlur stdDeviation="16" result="b2" />
+    <filter id="rimGlowStats" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
       <feMerge>
-        <feMergeNode in="b2" />
-        <feMergeNode in="b1" />
+        <feMergeNode in="blur1" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
@@ -78,38 +82,41 @@
   </defs>
 
   <!-- Ambient Glow Orbs -->
-  <circle cx="750" cy="70" r="150" fill="#00f2fe" opacity="0.10" filter="url(#glassGlowStats)" />
-  <circle cx="120" cy="240" r="150" fill="#a855f7" opacity="0.10" filter="url(#glassGlowStats)" />
+  <circle cx="750" cy="70" r="160" fill="#00f2fe" opacity="0.14" filter="url(#rimGlowStats)" />
+  <circle cx="120" cy="240" r="140" fill="#a855f7" opacity="0.14" filter="url(#rimGlowStats)" />
 
-  <!-- Outer Glass Frame with Realistic Shadow & Multi-Layer Border -->
-  <g filter="url(#realisticDepthStats)">
+  <!-- Outer Glass Rim Glow -->
+  <rect x="5" y="5" width="840" height="310" rx="20" fill="none" stroke="#00f2fe" stroke-width="4" opacity="0.22" filter="url(#rimGlowStats)" />
+
+  <!-- Outer Glass Frame with Shadow & High-Contrast Multi-Layer Border -->
+  <g filter="url(#cardShadowStats)">
     <rect x="6" y="6" width="838" height="308" rx="20" fill="url(#glassBgStats)" />
     <rect x="6" y="6" width="838" height="308" rx="20" fill="url(#glassGlareStats)" />
-    <!-- Realistic Outer Specular Border -->
-    <rect x="6" y="6" width="838" height="308" rx="20" fill="none" stroke="url(#realisticBorderStats)" stroke-width="1.8" />
+    <!-- High-Contrast Specular Glass Border -->
+    <rect x="6" y="6" width="838" height="308" rx="20" fill="none" stroke="url(#realisticBorderStats)" stroke-width="2.2" />
     <!-- Inner Bevel Inset Line -->
-    <rect x="8" y="8" width="834" height="304" rx="18" fill="none" stroke="url(#innerBevelStats)" stroke-width="1" />
+    <rect x="8" y="8" width="834" height="304" rx="18" fill="none" stroke="url(#innerBevelStats)" stroke-width="1.2" />
   </g>
 
   <!-- LEFT GLASS PANEL: Engineering Overview -->
   <g transform="translate(24, 24)">
-    <rect width="386" height="272" rx="14" fill="rgba(18, 24, 38, 0.70)" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1.2" />
+    <rect width="386" height="272" rx="14" fill="rgba(18, 24, 38, 0.75)" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.2" />
     
     <!-- Panel Header -->
     <text x="18" y="32" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
       ⚡ Engineering Overview
     </text>
-    <rect x="290" y="16" width="78" height="22" rx="11" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1" />
+    <rect x="290" y="16" width="78" height="22" rx="11" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1.2" />
     <text x="329" y="31" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">
       ECE • 2026
     </text>
-    <line x1="18" y1="46" x2="368" y2="46" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <line x1="18" y1="46" x2="368" y2="46" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
 
     <!-- 4 Frosted Metric Boxes with Specular Rim Borders -->
     <!-- Box 1 -->
     <g transform="translate(18, 58)">
-      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.85)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Total Contributions</text>
+      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.9)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Total Contributions</text>
       <text x="12" y="54" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">
         260+ <tspan fill="#38bdf8" font-size="11" font-weight="600">Commits</tspan>
       </text>
@@ -117,8 +124,8 @@
 
     <!-- Box 2 -->
     <g transform="translate(200, 58)">
-      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.85)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Research Focus</text>
+      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.9)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Research Focus</text>
       <text x="12" y="54" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800">
         V2X <tspan fill="#38bdf8" font-size="11" font-weight="600">Beamforming</tspan>
       </text>
@@ -126,8 +133,8 @@
 
     <!-- Box 3 -->
     <g transform="translate(18, 144)">
-      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.85)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Hardware &amp; IoT</text>
+      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.9)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Hardware &amp; IoT</text>
       <text x="12" y="54" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">
         Arduino <tspan fill="#34d399" font-size="11" font-weight="600">&amp; Telemetry</tspan>
       </text>
@@ -135,8 +142,8 @@
 
     <!-- Box 4 -->
     <g transform="translate(200, 144)">
-      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.85)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">AI Automation</text>
+      <rect width="168" height="74" rx="10" fill="rgba(13, 17, 28, 0.9)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+      <text x="12" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">AI Automation</text>
       <text x="12" y="54" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">
         LLMs <tspan fill="#c084fc" font-size="11" font-weight="600">&amp; n8n</tspan>
       </text>
@@ -144,23 +151,23 @@
 
     <!-- Left Footer -->
     <circle cx="26" cy="245" r="3.5" fill="#10b981" />
-    <text x="36" y="249" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Active Research &amp; Building</text>
-    <text x="368" y="249" text-anchor="end" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">MAKAUT University</text>
+    <text x="36" y="249" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Active Research &amp; Building</text>
+    <text x="368" y="249" text-anchor="end" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">MAKAUT University</text>
   </g>
 
   <!-- RIGHT GLASS PANEL: Technical Competency -->
   <g transform="translate(440, 24)">
-    <rect width="386" height="272" rx="14" fill="rgba(18, 24, 38, 0.70)" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1.2" />
+    <rect width="386" height="272" rx="14" fill="rgba(18, 24, 38, 0.75)" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.2" />
     
     <!-- Header -->
     <text x="18" y="32" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
       🛠️ Technical Competency
     </text>
-    <rect x="300" y="16" width="68" height="22" rx="11" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1" />
+    <rect x="300" y="16" width="68" height="22" rx="11" fill="rgba(56, 189, 248, 0.2)" stroke="#38bdf8" stroke-width="1.2" />
     <text x="334" y="31" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">
       Verified
     </text>
-    <line x1="18" y1="46" x2="368" y2="46" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <line x1="18" y1="46" x2="368" y2="46" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
 
     <!-- Skill 1 -->
     <g transform="translate(18, 62)">
@@ -194,7 +201,7 @@
       <rect class="bar-growth" y="8" width="287" height="6" rx="3" fill="url(#barAmber)" />
     </g>
 
-    <text x="18" y="249" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Systems Integration</text>
-    <text x="368" y="249" text-anchor="end" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Open for Relocation</text>
+    <text x="18" y="249" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Systems Integration</text>
+    <text x="368" y="249" text-anchor="end" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Open for Relocation</text>
   </g>
 </svg>
