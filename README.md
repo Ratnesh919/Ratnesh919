@@ -181,12 +181,17 @@
 
 ---
 
-<!-- 🐱 CUTE PIXEL MASCOT PEEKING OVER TOP-RIGHT CORNER OF STATS CARD 🐱 -->
-<div align="right" style="margin-bottom: -22px; padding-right: 18px;">
-  <img src="./above-cards-2.gif" width="75" alt="Corner Mascot Pet" style="margin-bottom: -15px; position: relative; z-index: 10;"/>
-</div>
-
-### 📊 GitHub Activity & Dynamic Statistics
+<!-- 🐱 SECTION HEADER WITH CORNER PET DIRECTLY ABOVE CARD RIM 🐱 -->
+<table>
+  <tr>
+    <td align="left" valign="bottom">
+      <h3>📊 GitHub Activity &amp; Dynamic Statistics</h3>
+    </td>
+    <td align="right" valign="bottom">
+      <img src="./above-cards-2.gif" width="70" alt="Corner Mascot" style="vertical-align: bottom; margin-bottom: 0;"/>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
 
