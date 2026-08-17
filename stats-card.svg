@@ -1,29 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="320">
   <defs>
-    <!-- Glass Background Gradient -->
+    <!-- Deep Glass Background Gradient -->
     <linearGradient id="glassBgStats" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0c101b" stop-opacity="0.95" />
-      <stop offset="50%" stop-color="#111728" stop-opacity="0.88" />
+      <stop offset="50%" stop-color="#111728" stop-opacity="0.90" />
       <stop offset="100%" stop-color="#090d16" stop-opacity="0.95" />
     </linearGradient>
 
     <!-- Glass Surface Highlight -->
     <linearGradient id="glassSurf" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01" />
-    </linearGradient>
-
-    <!-- Neon Outlines -->
-    <linearGradient id="neonLaser1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#4facfe" />
-      <stop offset="100%" stop-color="#00f2fe" />
-    </linearGradient>
-
-    <linearGradient id="neonLaser2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c084fc" />
-      <stop offset="50%" stop-color="#f43f5e" />
-      <stop offset="100%" stop-color="#a855f7" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
     </linearGradient>
 
     <!-- Progress Bars -->
@@ -45,8 +32,8 @@
     </linearGradient>
 
     <filter id="glassGlowStats" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="b1" />
-      <feGaussianBlur stdDeviation="9" result="b2" />
+      <feGaussianBlur stdDeviation="6" result="b1" />
+      <feGaussianBlur stdDeviation="12" result="b2" />
       <feMerge>
         <feMergeNode in="b2" />
         <feMergeNode in="b1" />
@@ -55,25 +42,9 @@
     </filter>
 
     <style>
-      @keyframes borderRunStats {
-        0% { stroke-dashoffset: 0; }
-        100% { stroke-dashoffset: 2340; }
-      }
-      @keyframes borderRunStatsRev {
-        0% { stroke-dashoffset: 2340; }
-        100% { stroke-dashoffset: 0; }
-      }
       @keyframes barGrowScale {
         0% { transform: scaleX(0); }
         100% { transform: scaleX(1); }
-      }
-      .laser-cyan-stats {
-        stroke-dasharray: 160 425;
-        animation: borderRunStats 7s linear infinite;
-      }
-      .laser-purple-stats {
-        stroke-dasharray: 120 465;
-        animation: borderRunStatsRev 9s linear infinite;
       }
       .bar-growth {
         transform-origin: left;
@@ -83,17 +54,14 @@
   </defs>
 
   <!-- Ambient Glow Orbs -->
-  <circle cx="750" cy="70" r="140" fill="#00f2fe" opacity="0.09" filter="url(#glassGlowStats)" />
-  <circle cx="120" cy="240" r="140" fill="#a855f7" opacity="0.09" filter="url(#glassGlowStats)" />
+  <circle cx="750" cy="70" r="140" fill="#00f2fe" opacity="0.08" filter="url(#glassGlowStats)" />
+  <circle cx="120" cy="240" r="140" fill="#a855f7" opacity="0.08" filter="url(#glassGlowStats)" />
 
   <!-- Outer Glass Frame -->
   <rect x="4" y="4" width="842" height="312" rx="16" fill="url(#glassBgStats)" />
   <rect x="4" y="4" width="842" height="312" rx="16" fill="url(#glassSurf)" />
-  <rect x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
-
-  <!-- ⚡ ANIMATED ELECTRIC NEON LASER OUTLINE ⚡ -->
-  <rect class="laser-cyan-stats" x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="url(#neonLaser1)" stroke-width="3" filter="url(#glassGlowStats)" />
-  <rect class="laser-purple-stats" x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="url(#neonLaser2)" stroke-width="2.5" filter="url(#glassGlowStats)" />
+  <!-- Refined Glass Border -->
+  <rect x="4" y="4" width="842" height="312" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.5" />
 
   <!-- LEFT GLASS PANEL: Engineering Overview -->
   <g transform="translate(24, 24)">
@@ -198,7 +166,6 @@
       <rect class="bar-growth" y="8" width="287" height="6" rx="3" fill="url(#barAmber)" />
     </g>
 
-    <!-- Right Footer -->
     <text x="18" y="249" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Systems Integration</text>
     <text x="368" y="249" text-anchor="end" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Open for Relocation</text>
   </g>
