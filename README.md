@@ -1,13 +1,13 @@
 <div align="center">
 
-  <!-- 🎮 TOP HEADER: RETRO PIXEL CYBER DEVELOPER WORKSTATION 🎮 -->
-  <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100%" alt="Retro Pixel Cyber Developer Workstation" style="border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12);"/>
+  <!-- 🌟 HERO SECTION ANIMATED BANNER 🌟 -->
+  <img src="./hero-section.gif" width="100%" alt="Hero Section Banner" style="border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12);"/>
 
   <br/><br/>
 
-  <!-- 🪟 FROSTED GLASSMORPHISM IDENTITY CARD 🪟 -->
+  <!-- 🪟 FROSTED GLASS IDENTITY CARD 🪟 -->
   <a href="https://github.com/Ratnesh919">
-    <img src="./header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Glassmorphic Header Card"/>
+    <img src="./header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Frosted Glass Card"/>
   </a>
 
   <br/><br/>
@@ -19,7 +19,7 @@
 
   <br/><br/>
 
-  <!-- 🌐 FROSTED GLASS CONNECT BADGES 🌐 -->
+  <!-- 🌐 CONNECT & SOCIAL BUTTONS 🌐 -->
   <a href="https://my-portfolio-omega-liart-40.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio-0C101B?style=for-the-badge&logo=vercel&logoColor=00f2fe" alt="Portfolio"/>
   </a>
@@ -38,7 +38,7 @@
 
   <br/><br/>
 
-  <!-- 📊 PROFILE VIEWS & STATUS 📊 -->
+  <!-- 📊 LIVE STATS BADGES 📊 -->
   <img src="https://komarev.com/ghpvc/?username=Ratnesh919&label=Profile%20Views&color=00d2ff&style=flat-square" alt="Profile Views" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/github/followers/Ratnesh919?label=Followers&style=flat-square&color=22c55e" alt="Followers" />
@@ -48,6 +48,13 @@
 </div>
 
 ---
+
+<!-- 🌌 DECORATIVE ANIMATION ABOVE ABOUT ME 🌌 -->
+<div align="center">
+  <img src="./above-cards-gif.gif" width="100%" alt="Section Decoration" style="border-radius: 12px;"/>
+</div>
+
+<br/>
 
 ### 👨‍💻 About Me
 
@@ -62,7 +69,7 @@
         💡 <code>Code 💻 ➔ Automate 🤖 ➔ Test ⚡ ➔ Deploy 🚀</code>
       </p>
       <ul>
-        <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms to dynamically direct electromagnetic signals toward high-speed moving vehicles and reduce interference.</li>
+        <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms to dynamically direct electromagnetic signals toward high-speed moving vehicles and eliminate interference.</li>
         <li>🤖 <strong>AI Automation Specialist</strong>: Architecting modular conversational assistants, autonomous multi-agent pipelines, and automated workflows using <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
         <li>⚡ <strong>Embedded Hardware &amp; IoT</strong>: Building smart sensor telemetry prototypes using <strong>Arduino</strong> microcontrollers, ultrasonic matrices, and wireless RF communication shields.</li>
         <li>🎨 <strong>UI/UX &amp; Web Developer</strong>: Prototyping WCAG-accessible digital design systems in <strong>Figma</strong> and deploying responsive web applications on <strong>Vercel</strong>.</li>
@@ -75,7 +82,12 @@
 
 ---
 
-### 🛠️ Tech Stack & Toolbox
+<!-- 🛠️ ANIMATED SKILLS HEADER GIF 🛠️ -->
+<div align="center">
+  <img src="./skills.gif" width="320" alt="Skills Header GIF"/>
+</div>
+
+<br/>
 
 <div align="center">
 
@@ -88,7 +100,7 @@
 
   <br/>
 
-  <!-- Categorized Glass Badge Badges -->
+  <!-- Categorized Glass Badges -->
   <div>
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
     <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
@@ -165,6 +177,13 @@
 
 ---
 
+<!-- 🌌 DECORATIVE ANIMATION ABOVE STATS 🌌 -->
+<div align="center">
+  <img src="./above-cards-2.gif" width="180" alt="Section Decoration"/>
+</div>
+
+<br/>
+
 ### 📊 GitHub Activity & Dynamic Statistics
 
 <div align="center">
@@ -176,7 +195,7 @@
 
   <br/><br/>
 
-  <!-- Dynamic GitHub Streak Stats with Cyan Neon Flame -->
+  <!-- Dynamic GitHub Streak Stats with Cyan Flame -->
   <img src="https://streak-stats.demolab.com/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0C101B&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE" height="175" alt="GitHub Streak" />
 
   <br/><br/>
@@ -222,6 +241,16 @@
 <div align="center">
 
   <p>I'm always excited to discuss <strong>Networking Systems</strong>, <strong>AI Agents & Automation</strong>, <strong>IoT Hardware</strong>, or new project collaborations!</p>
+
+  <!-- Animated Social Icons -->
+  <p>
+    <a href="https://tinyurl.com/2st86aht" target="_blank">
+      <img src="./linkedin.gif" width="48" alt="LinkedIn" style="margin: 0 8px;"/>
+    </a>
+    <a href="https://github.com/Ratnesh919" target="_blank">
+      <img src="./facebook.gif" width="48" alt="Social" style="margin: 0 8px;"/>
+    </a>
+  </p>
 
   <a href="https://my-portfolio-omega-liart-40.vercel.app">
     <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-00f2fe?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio Link"/>
