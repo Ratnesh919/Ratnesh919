@@ -1,6 +1,6 @@
 <div align="center">
 
-  <!-- 🌟 HERO SECTION ANIMATED BANNER 🌟 -->
+  <!-- 🌟 HERO SECTION: ANIMATED GAMING WORKSTATION BANNER 🌟 -->
   <img src="./hero-section.gif" width="100%" alt="Hero Section Banner" style="border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12);"/>
 
   <br/><br/>
@@ -19,7 +19,7 @@
 
   <br/><br/>
 
-  <!-- 🌐 CONNECT & SOCIAL BUTTONS 🌐 -->
+  <!-- 🌐 FROSTED GLASS CONNECT BADGES 🌐 -->
   <a href="https://my-portfolio-omega-liart-40.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio-0C101B?style=for-the-badge&logo=vercel&logoColor=00f2fe" alt="Portfolio"/>
   </a>
@@ -49,18 +49,11 @@
 
 ---
 
-<!-- 🌌 DECORATIVE ANIMATION ABOVE ABOUT ME 🌌 -->
-<div align="center">
-  <img src="./above-cards-gif.gif" width="100%" alt="Section Decoration" style="border-radius: 12px;"/>
-</div>
-
-<br/>
-
 ### 👨‍💻 About Me
 
 <table>
   <tr>
-    <td width="100%" valign="top">
+    <td width="72%" valign="top">
       <p>
         🎓 <strong>B.Tech in Electronics &amp; Communication Engineering (2022–2026)</strong><br/>
         <em>Swami Vivekananda Institute of Science &amp; Technology (MAKAUT University)</em>
@@ -77,6 +70,10 @@
         <li>📫 <strong>Direct Inquiries</strong>: <a href="mailto:kumarsinghratnesh3@gmail.com"><code>kumarsinghratnesh3@gmail.com</code></a></li>
       </ul>
     </td>
+    <td width="28%" align="center" valign="middle">
+      <!-- 🎨 ABOUT ME MASCOT / GRAPHIC 🎨 -->
+      <img src="./above-cards-gif.gif" width="100%" alt="Developer Illustration" style="border-radius: 12px;"/>
+    </td>
   </tr>
 </table>
 
@@ -84,7 +81,7 @@
 
 <!-- 🛠️ ANIMATED SKILLS HEADER GIF 🛠️ -->
 <div align="center">
-  <img src="./skills.gif" width="320" alt="Skills Header GIF"/>
+  <img src="./skills.gif" width="260" alt="Skills Header GIF"/>
 </div>
 
 <br/>
@@ -121,6 +118,13 @@
 </div>
 
 ---
+
+<!-- 🌌 PANORAMIC BANNER GRAPHIC DIVIDER 🌌 -->
+<div align="center">
+  <img src="./banner-graphic.png" width="100%" alt="Engineering & Projects Panorama" style="border-radius: 12px;"/>
+</div>
+
+<br/>
 
 ### 🚀 Featured Engineering & AI Projects
 
@@ -177,12 +181,10 @@
 
 ---
 
-<!-- 🌌 DECORATIVE ANIMATION ABOVE STATS 🌌 -->
-<div align="center">
-  <img src="./above-cards-2.gif" width="180" alt="Section Decoration"/>
+<!-- 🐱 CUTE PIXEL MASCOT PEEKING OVER TOP-RIGHT CORNER OF STATS CARD 🐱 -->
+<div align="right" style="margin-bottom: -22px; padding-right: 18px;">
+  <img src="./above-cards-2.gif" width="75" alt="Corner Mascot Pet" style="margin-bottom: -15px; position: relative; z-index: 10;"/>
 </div>
-
-<br/>
 
 ### 📊 GitHub Activity & Dynamic Statistics
 
