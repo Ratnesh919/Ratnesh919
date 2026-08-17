@@ -1,8 +1,8 @@
 <div align="center">
 
-  <!-- Custom Animated Header Card -->
+  <!-- ⚡ CUSTOM ANIMATED ELECTRIC OUTLINE HEADER CARD ⚡ -->
   <a href="https://github.com/Ratnesh919">
-    <img src="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/main/assets/header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Header Card"/>
+    <img src="./assets/header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Header Card"/>
   </a>
 
   <br/><br/>
@@ -66,9 +66,9 @@ Hobbies: [Gaming Mechanics, Tech Photography, Sketching & Creative Editing]
 ### 📊 Engineering Dashboard & Telemetry
 
 <div align="center">
-  <!-- Custom Self-Hosted Animated Live Stats Card -->
+  <!-- ⚡ CUSTOM ANIMATED ELECTRIC OUTLINE STATS CARD ⚡ -->
   <a href="https://github.com/Ratnesh919">
-    <img src="https://raw.githubusercontent.com/Ratnesh919/Ratnesh919/main/assets/stats-card.svg" width="100%" alt="Ratnesh Engineering Stats Card"/>
+    <img src="./assets/stats-card.svg" width="100%" alt="Ratnesh Engineering Stats Card"/>
   </a>
 </div>
 
@@ -233,10 +233,5 @@ Hobbies: [Gaming Mechanics, Tech Photography, Sketching & Creative Editing]
   <a href="mailto:kumarsinghratnesh3@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-Send%20Message-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Link"/>
   </a>
-
-  <br/><br/>
-
-  <!-- Bottom Wave Divider -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=100&section=footer" width="100%" alt="Footer Wave"/>
 
 </div>
