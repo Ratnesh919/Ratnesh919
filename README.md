@@ -1,6 +1,11 @@
 <div align="center">
 
-  <!-- 🌌 FROSTED GLASSMORPHISM ANIMATED HEADER BANNER 🌌 -->
+  <!-- 🎮 TOP HEADER: RETRO PIXEL CYBER DEVELOPER WORKSTATION 🎮 -->
+  <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100%" alt="Retro Pixel Cyber Developer Workstation" style="border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12);"/>
+
+  <br/><br/>
+
+  <!-- 🪟 FROSTED GLASSMORPHISM IDENTITY CARD 🪟 -->
   <a href="https://github.com/Ratnesh919">
     <img src="./header-card.svg" width="100%" alt="Ratnesh Kumar Singh - Glassmorphic Header Card"/>
   </a>
@@ -14,7 +19,7 @@
 
   <br/><br/>
 
-  <!-- 🌐 FROSTED GLASS SOCIAL CONNECT BADGES 🌐 -->
+  <!-- 🌐 FROSTED GLASS CONNECT BADGES 🌐 -->
   <a href="https://my-portfolio-omega-liart-40.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio-0C101B?style=for-the-badge&logo=vercel&logoColor=00f2fe" alt="Portfolio"/>
   </a>
@@ -48,7 +53,7 @@
 
 <table>
   <tr>
-    <td width="60%" valign="top">
+    <td width="100%" valign="top">
       <p>
         🎓 <strong>B.Tech in Electronics &amp; Communication Engineering (2022–2026)</strong><br/>
         <em>Swami Vivekananda Institute of Science &amp; Technology (MAKAUT University)</em>
@@ -57,17 +62,13 @@
         💡 <code>Code 💻 ➔ Automate 🤖 ➔ Test ⚡ ➔ Deploy 🚀</code>
       </p>
       <ul>
-        <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms to dynamically direct signals toward high-speed moving vehicles.</li>
-        <li>🤖 <strong>AI Automation Specialist</strong>: Architecting modular AI assistants, multi-agent workflows, and webhook integrations with <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
-        <li>⚡ <strong>Embedded Hardware &amp; IoT</strong>: Building sensor telemetry prototypes with <strong>Arduino</strong> microcontrollers, ultrasonic matrices, and wireless RF shields.</li>
-        <li>🎨 <strong>UI/UX &amp; Web Developer</strong>: Designing WCAG-accessible digital interfaces in <strong>Figma</strong> and deploying lightning-fast responsive web apps on <strong>Vercel</strong>.</li>
+        <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms to dynamically direct electromagnetic signals toward high-speed moving vehicles and reduce interference.</li>
+        <li>🤖 <strong>AI Automation Specialist</strong>: Architecting modular conversational assistants, autonomous multi-agent pipelines, and automated workflows using <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
+        <li>⚡ <strong>Embedded Hardware &amp; IoT</strong>: Building smart sensor telemetry prototypes using <strong>Arduino</strong> microcontrollers, ultrasonic matrices, and wireless RF communication shields.</li>
+        <li>🎨 <strong>UI/UX &amp; Web Developer</strong>: Prototyping WCAG-accessible digital design systems in <strong>Figma</strong> and deploying responsive web applications on <strong>Vercel</strong>.</li>
         <li>🎮 <strong>Passions</strong>: Video game mechanics analysis, tech photography, sketching, and following hardware breakthroughs.</li>
         <li>📫 <strong>Direct Inquiries</strong>: <a href="mailto:kumarsinghratnesh3@gmail.com"><code>kumarsinghratnesh3@gmail.com</code></a></li>
       </ul>
-    </td>
-    <td width="40%" align="center" valign="middle">
-      <!-- 🎮 RETRO PIXEL CYBER WORKSTATION ANIMATED GIF 🎮 -->
-      <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100%" alt="Developer Pixel Workstation Animation"/>
     </td>
   </tr>
 </table>
@@ -168,7 +169,7 @@
 
 <div align="center">
 
-  <!-- ⚡ CUSTOM FROSTED GLASS STATS CARD ⚡ -->
+  <!-- 🪟 FROSTED GLASS STATS DASHBOARD CARD 🪟 -->
   <a href="https://github.com/Ratnesh919">
     <img src="./stats-card.svg" width="100%" alt="Ratnesh Engineering Stats Card"/>
   </a>
