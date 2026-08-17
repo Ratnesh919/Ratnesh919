@@ -1,0 +1,267 @@
+<svg fill="none" viewBox="0 0 850 320" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+
+        .dashboard-container {
+          width: 850px;
+          height: 320px;
+          background: #0d1117;
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          position: relative;
+          overflow: hidden;
+          padding: 24px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        /* Ambient subtle light */
+        .ambient-glow {
+          position: absolute;
+          width: 250px;
+          height: 250px;
+          background: radial-gradient(circle, rgba(0, 242, 254, 0.08) 0%, rgba(0,0,0,0) 70%);
+          top: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+          pointer-events: none;
+        }
+
+        .card-panel {
+          background: rgba(22, 27, 34, 0.7);
+          border: 1px solid rgba(48, 54, 61, 0.8);
+          border-radius: 12px;
+          padding: 18px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+          z-index: 2;
+        }
+
+        .panel-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(48, 54, 61, 0.6);
+          padding-bottom: 10px;
+          margin-bottom: 12px;
+        }
+
+        .panel-title {
+          font-size: 14px;
+          font-weight: 700;
+          color: #58a6ff;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          letter-spacing: 0.3px;
+        }
+
+        .panel-tag {
+          font-size: 11px;
+          font-weight: 600;
+          color: #3fb950;
+          background: rgba(63, 185, 80, 0.15);
+          padding: 2px 8px;
+          border-radius: 10px;
+        }
+
+        /* Metric Grid */
+        .metrics-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+
+        .metric-box {
+          background: rgba(13, 17, 23, 0.8);
+          border: 1px solid rgba(48, 54, 61, 0.5);
+          border-radius: 8px;
+          padding: 10px 12px;
+        }
+
+        .metric-label {
+          font-size: 11px;
+          color: #8b949e;
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+
+        .metric-value {
+          font-size: 20px;
+          font-weight: 800;
+          color: #f0f6fc;
+          display: flex;
+          align-items: baseline;
+          gap: 4px;
+        }
+
+        .metric-sub {
+          font-size: 11px;
+          color: #58a6ff;
+          font-weight: 600;
+        }
+
+        /* Skill bars */
+        .skill-item {
+          margin-bottom: 10px;
+        }
+
+        .skill-info {
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+          color: #c9d1d9;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+
+        .progress-bar-bg {
+          height: 6px;
+          width: 100%;
+          background: #21262d;
+          border-radius: 4px;
+          overflow: hidden;
+        }
+
+        .progress-bar-fill {
+          height: 100%;
+          border-radius: 4px;
+          animation: fillUp 1.8s ease-out forwards;
+        }
+
+        @keyframes fillUp {
+          from { width: 0%; }
+        }
+
+        .fill-cyan { background: linear-gradient(90deg, #00f2fe, #4facfe); }
+        .fill-purple { background: linear-gradient(90deg, #8a2be2, #c084fc); }
+        .fill-green { background: linear-gradient(90deg, #10b981, #34d399); }
+        .fill-amber { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+
+        .footer-note {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 11px;
+          color: #8b949e;
+          padding-top: 8px;
+        }
+
+        .live-dot {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          background: #3fb950;
+          border-radius: 50%;
+          box-shadow: 0 0 8px #3fb950;
+          margin-right: 4px;
+        }
+      </style>
+
+      <div class="dashboard-container">
+        <div class="ambient-glow"></div>
+
+        <!-- Left Panel: Engineering Core Stats -->
+        <div class="card-panel">
+          <div>
+            <div class="panel-header">
+              <span class="panel-title">⚡ Engineering Overview</span>
+              <span class="panel-tag">ECE • 2026</span>
+            </div>
+
+            <div class="metrics-grid">
+              <div class="metric-box">
+                <div class="metric-label">Total Contributions</div>
+                <div class="metric-value">260+ <span class="metric-sub">Commits</span></div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Research Focus</div>
+                <div class="metric-value">V2X <span class="metric-sub">Beamforming</span></div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">Hardware &amp; IoT</div>
+                <div class="metric-value">Arduino <span class="metric-sub">&amp; Telemetry</span></div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-label">AI Automation</div>
+                <div class="metric-value">LLMs <span class="metric-sub">&amp; n8n</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-note">
+            <span><span class="live-dot"></span>Active Research &amp; Building</span>
+            <span>MAKAUT University</span>
+          </div>
+        </div>
+
+        <!-- Right Panel: Core Competencies -->
+        <div class="card-panel">
+          <div>
+            <div class="panel-header">
+              <span class="panel-title">🛠️ Technical Competency</span>
+              <span class="panel-tag">Verified</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python, C, C++ &amp; Scripting</span>
+                <span style="color: #4facfe;">90%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill fill-cyan" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>AI Automation, APIs &amp; n8n</span>
+                <span style="color: #c084fc;">88%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill fill-purple" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Networking, TCP/IP &amp; Protocols</span>
+                <span style="color: #34d399;">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill fill-green" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Figma UI/UX &amp; Web Development</span>
+                <span style="color: #fbbf24;">82%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill fill-amber" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-note">
+            <span>Systems Integration</span>
+            <span>Open for Relocation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </foreignObject>
+</svg>
