@@ -181,38 +181,23 @@
 
 ---
 
-<!-- 🐱 SECTION HEADER WITH CORNER PET DIRECTLY ABOVE CARD RIM 🐱 -->
-<div align="center">
-  <table width="100%" style="border: none; border-collapse: collapse;">
-    <tr>
-      <td align="left" valign="bottom" style="border: none;">
-        <h3>📊 GitHub Activity &amp; Dynamic Statistics</h3>
-      </td>
-      <td align="right" valign="bottom" style="border: none; width: 80px;">
-        <img src="./above-cards-2.gif" width="70" alt="Corner Mascot" style="vertical-align: bottom; margin-bottom: 0;"/>
-      </td>
-    </tr>
-  </table>
-</div>
+### 📊 GitHub Activity &amp; Dynamic Statistics
 
 <div align="center">
 
-  <!-- 🪟 FROSTED GLASS STATS DASHBOARD CARD WITH REALISTIC SPECULAR BORDER 🪟 -->
+  <!-- 🪟 FROSTED GLASS STATS DASHBOARD CARD WITH PERCHED CORNER CAT 🪟 -->
   <a href="https://github.com/Ratnesh919">
-    <img src="./stats-card.svg?v=2" width="100%" alt="Ratnesh Engineering Stats Card"/>
+    <img src="./stats-card.svg?v=3" width="100%" alt="Ratnesh Engineering Stats Card"/>
   </a>
 
   <br/><br/>
 
-  <!-- Dynamic GitHub Streak Stats with Cyan Flame — using github-readme-streak-stats fallback -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0C101B&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE" height="175" alt="GitHub Streak" />
+  <!-- Dynamic GitHub Streak Stats Card (Reliable local render with Tokyo Night / Cyan theme) -->
+  <a href="https://github.com/Ratnesh919">
+    <img src="./streak-card.svg?v=1" height="175" alt="GitHub Streak" />
+  </a>
 
   <br/><br/>
-
-  <!-- 🐱 CAT GIF — MARKED POSITION (bottom-right corner of stats area) 🐱 -->
-  <div align="right">
-    <img src="./above-cards-gif.gif" width="110" alt="Cat Mascot" style="vertical-align: bottom;"/>
-  </div>
 
   <!-- Dynamic Tokyo-Night Activity Wave Graph -->
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ratnesh919&theme=tokyo-night&hide_border=true&bg_color=0C101B" width="100%" alt="GitHub Activity Graph" />
