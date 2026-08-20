@@ -38,12 +38,14 @@
 
   <br/><br/>
 
-  <!-- 📊 LIVE STATS BADGES 📊 -->
-  <img src="https://komarev.com/ghpvc/?username=Ratnesh919&label=Profile%20Views&color=00d2ff&style=flat-square" alt="Profile Views" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/github/followers/Ratnesh919?label=Followers&style=flat-square&color=22c55e" alt="Followers" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-blue?style=flat-square" alt="Status" />
+  <!-- 📊 LIVE STATS & VISITOR BADGES 📊 -->
+  <a href="https://github.com/Ratnesh919">
+    <img src="https://komarev.com/ghpvc/?username=Ratnesh919&label=Profile%20Visitors&color=00f2fe&style=for-the-badge&base_color=0c101b" alt="Profile Visitors" />
+  </a>
+  &nbsp;
+  <img src="https://img.shields.io/github/followers/Ratnesh919?label=Followers&style=for-the-badge&color=22c55e&logo=github&logoColor=white" alt="Followers" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Status-Open_to_Opportunities-00f2fe?style=for-the-badge" alt="Status" />
 
 </div>
 
@@ -192,9 +194,9 @@
 
   <br/><br/>
 
-  <!-- Dynamic GitHub Streak Stats Card (Reliable local render with Tokyo Night / Cyan theme) -->
+  <!-- Dynamic Live GitHub Streak Stats Card (Auto-updating in real-time) -->
   <a href="https://github.com/Ratnesh919">
-    <img src="./streak-card.svg?v=1" height="175" alt="GitHub Streak" />
+    <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0C101B&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE" height="175" alt="GitHub Streak" />
   </a>
 
   <br/><br/>
