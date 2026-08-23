@@ -65,7 +65,7 @@
       </p>
       <ul>
         <li>🛰️ <strong>V2X &amp; RF Systems Researcher</strong>: Designed adaptive smart antenna prototypes with <strong>Ansys HFSS</strong> beamforming algorithms to dynamically direct electromagnetic signals toward high-speed moving vehicles and eliminate interference.</li>
-        <li>🤖 <strong>AI Automation Specialist</strong>: Architecting modular conversational assistants, autonomous multi-agent pipelines, and automated workflows using <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
+        <li>🤖 <strong>AI Automation Developer</strong>: Architecting modular conversational assistants, autonomous multi-agent pipelines, and automated workflows using <strong>OpenAI API</strong>, <strong>Google AI Studio</strong>, and <strong>n8n</strong>.</li>
         <li>⚡ <strong>Embedded Hardware &amp; IoT</strong>: Building smart sensor telemetry prototypes using <strong>Arduino</strong> microcontrollers, ultrasonic matrices, and wireless RF communication shields.</li>
         <li>🎨 <strong>UI/UX &amp; Web Developer</strong>: Prototyping WCAG-accessible digital design systems in <strong>Figma</strong> and deploying responsive web applications on <strong>Vercel</strong>.</li>
         <li>🎮 <strong>Passions</strong>: Video game mechanics analysis, tech photography, sketching, and following hardware breakthroughs.</li>
