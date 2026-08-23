@@ -194,6 +194,15 @@
 
   <br/><br/>
 
+  <!-- 👁️ REAL-TIME PROFILE TRAFFIC COUNTER 👁️ -->
+  <p align="center">
+    <a href="https://github.com/Ratnesh919">
+      <img src="https://komarev.com/ghpvc/?username=Ratnesh919&label=TOTAL%20PROFILE%20VIEWS&color=00f2fe&style=for-the-badge&base_color=0c101b" alt="Total Profile Views" />
+    </a>
+  </p>
+
+  <br/>
+
   <!-- Dynamic Live GitHub Streak Stats Card (Auto-updating in real-time) -->
   <a href="https://github.com/Ratnesh919">
     <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Ratnesh919&theme=tokyonight&hide_border=true&background=0C101B&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE" height="175" alt="GitHub Streak" />
