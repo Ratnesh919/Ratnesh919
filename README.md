@@ -201,8 +201,10 @@
 
   <br/><br/>
 
-  <!-- Dynamic Tokyo-Night Activity Wave Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ratnesh919&theme=tokyo-night&hide_border=true&bg_color=0C101B" width="100%" alt="GitHub Activity Graph" />
+  <!-- Dynamic Tokyo-Night Activity Wave Graph (Fast Active Mirror) -->
+  <a href="https://github.com/Ratnesh919">
+    <img src="https://github-readme-activity-graph-two.vercel.app/graph?username=Ratnesh919&theme=tokyo-night&hide_border=true&bg_color=0C101B" width="100%" alt="GitHub Activity Graph" />
+  </a>
 
 </div>
 
